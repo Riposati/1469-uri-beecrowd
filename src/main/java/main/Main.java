@@ -68,9 +68,7 @@ class Graph {
     int depthFirstSearch(int ini, int lowest) {
         vis.set(ini, 1);
 
-        int tam = adj.get(ini).size();
-
-        for (int i = 0; i < tam; ++i) {
+        for (int i = 0; i < adj.get(ini).size(); ++i) {
 
             int v = adj.get(ini).get(i);
 
