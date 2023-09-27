@@ -152,12 +152,9 @@ public class Main {
         if (graph.getAdj().get(graph.getPos().get(vertex - 1)).isEmpty())
             System.out.print("*\n");
         else {
-
             graph.initializeVis(N);
-
             int lowest = 999;
             lowest = graph.depthFirstSearch(graph.getPos().get(vertex - 1), lowest);
-
             System.out.print(lowest + "\n");
         }
     }
