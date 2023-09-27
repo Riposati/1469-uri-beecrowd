@@ -1,0 +1,17 @@
+
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ïä”8ú‡É¿­1
+r	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þ›ºšÿÿÿÿÿ8ú‡É¿­1
+m	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«…à’8ú‡É¿­1
+m	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û£Ç‚8ú‡É¿­1
+m	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü‹½8ú‡É¿­1
+r	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ±þúûÿÿÿÿ8ú‡É¿­1
+r	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ±þúûÿÿÿÿ8”Éá¿­1
+r	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ±þúûÿÿÿÿ8²¤ã¿­1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.( µÌøÿÿÿÿ8‰ˆÉ¿­1
+o
+java:S3776\"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(œû¿Ø8‰ˆÉ¿­1
+`
+java:S1659_">Declare "M" and all following declarations on a separate line.(Õ±þúûÿÿÿÿ8‰ˆÉ¿­1
+M	java:S106„"+Replace this use of System.out by a logger.(â¥žåûÿÿÿÿ8˜ˆÉ¿­1
+G	java:S106Œ"+Replace this use of System.out by a logger.(ž…´58˜ˆÉ¿­1
