@@ -10,7 +10,7 @@ import java.util.List;
 class Graph {
     private List<Integer> vis = new ArrayList<>();
     private List<List<Integer>> adj = new ArrayList<>();
-    private List<Integer> id;
+    private List<Integer> ages;
     private List<Integer> pos = new ArrayList<>();
 
     public Graph() {
@@ -20,8 +20,8 @@ class Graph {
         return adj;
     }
 
-    public List<Integer> getId() {
-        return id;
+    public List<Integer> getAges() {
+        return ages;
     }
 
     public List<Integer> getPos() {
@@ -36,10 +36,10 @@ class Graph {
         this.setVis(N);
     }
 
-    public void setId(int N) {
-        this.id = new ArrayList<>(N);
+    public void setAges(int N) {
+        this.ages = new ArrayList<>(N);
         for (int i = 0; i < N; i++) {
-            id.add(0);
+            ages.add(0);
         }
     }
 
@@ -74,8 +74,8 @@ class Graph {
 
             if (vis.get(v) == 0) {
 
-                if (id.get(v) < lowest)
-                    lowest = id.get(v);
+                if (ages.get(v) < lowest)
+                    lowest = ages.get(v);
 
                 lowest = depthFirstSearch(v, lowest);
             }
@@ -104,7 +104,7 @@ public class Main {
     }
 
     private static void initializeGraphData(int N, int M, Graph graph) {
-        graph.setId(N);
+        graph.setAges(N);
         graph.setAdj(M);
         graph.setVis(N);
         graph.setPos(N);
@@ -120,7 +120,7 @@ public class Main {
     private static void readAges(BufferedReader in, int N, Graph graph) throws IOException {
         String aux = in.readLine();
         for (int i = 0; i < N; i++) {
-            graph.getId().set(i, Integer.parseInt(aux.split(" ")[i]));
+            graph.getAges().set(i, Integer.parseInt(aux.split(" ")[i]));
             graph.getPos().set(i, i);
         }
     }
@@ -140,10 +140,10 @@ public class Main {
 
     private static void swapPlaces(Graph graph, String aux2) {
         int vertexOne = Integer.parseInt(aux2.split(" ")[1]);
-        int verticeTwo = Integer.parseInt(aux2.split(" ")[2]);
+        int vertexTwo = Integer.parseInt(aux2.split(" ")[2]);
 
-        Collections.swap(graph.getId(), graph.getPos().get(vertexOne - 1), graph.getPos().get(verticeTwo - 1));
-        Collections.swap(graph.getPos(), vertexOne - 1, verticeTwo - 1);
+        Collections.swap(graph.getAges(), graph.getPos().get(vertexOne - 1), graph.getPos().get(vertexTwo - 1));
+        Collections.swap(graph.getPos(), vertexOne - 1, vertexTwo - 1);
     }
 
     private static void analyseLowestAge(int N, Graph graph, String aux2) {
